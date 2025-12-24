@@ -28,6 +28,7 @@ Open http://localhost:7860
 **Orders** (requires email + PIN):
 - "What are my orders?"
 - "Check my order status"
+- "Create an order for product COM-0001"
 
 ## Test Credentials
 
@@ -51,14 +52,7 @@ Open http://localhost:7860
 - **UI**: Gradio
 - **MCP Server**: `https://vipfapwm3x.us-east-1.awsapprunner.com/mcp`
 
-## Deploy to HuggingFace Spaces
+## Limitations
 
-1. Create a new Space at [huggingface.co/new-space](https://huggingface.co/new-space)
-2. Select **Gradio** as the SDK
-3. Clone and push:
-   ```bash
-   git remote add space https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE
-   git push space main
-   ```
-4. Add `OPENAI_API_KEY` in Space Settings → Variables and Secrets
-
+- **No conversation persistence**: Chat history is lost when you refresh the page
+- **Authentication required per order query**: You'll need to provide email + PIN each time you ask about orders (no session persistence)
