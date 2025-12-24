@@ -4,6 +4,10 @@ A customer support chatbot for computer products using LangChain agents and MCP.
 
 🚀 **[Live Demo on HuggingFace Spaces](https://huggingface.co/spaces/thecodingpoet/cschatbot)**
 
+## Documentation
+
+- [Architecture](ARCHITECTURE.md) - Design decisions and system overview
+
 ## Quick Start
 
 ```bash
@@ -58,6 +62,7 @@ Open http://localhost:7860
    ```
 4. Add `OPENAI_API_KEY` in Space Settings → Variables and Secrets
 
-## Documentation
+## Screenshots
 
-- [Architecture](ARCHITECTURE.md) - Design decisions and system overview
+<img width="1523" height="1003" alt="Screenshot 2025-12-24 at 18 55 29" src="https://github.com/user-attachments/assets/f52db3de-bc1f-4962-a25a-ce09f7acdde1" />
+
