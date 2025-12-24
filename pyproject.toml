@@ -8,6 +8,7 @@ dependencies = [
     "langchain>=0.3.0",
     "langchain-openai>=0.2.0",
     "langchain-mcp-adapters>=0.1.0",
-    "gradio>=4.0.0",
+    "gradio==4.44.0",
+    "huggingface_hub<0.25.0",
     "python-dotenv>=1.0.0",
 ]

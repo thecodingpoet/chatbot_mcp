@@ -32,7 +32,6 @@ demo = gr.ChatInterface(
         "What products do you have?",
         "What are my orders?",
     ],
-    theme=gr.themes.Soft(),
 )
 
 
