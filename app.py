@@ -1,11 +1,5 @@
 """Gradio UI entry point for Customer Support Chatbot."""
 
-import sys
-from pathlib import Path
-
-# Add src to path for imports
-sys.path.insert(0, str(Path(__file__).parent / "src"))
-
 import asyncio
 import gradio as gr
 from agent import CustomerSupportAgent
@@ -36,4 +30,4 @@ demo = gr.ChatInterface(
 
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+    demo.launch(server_name="0.0.0.0", server_port=7860, inbrowser=True)

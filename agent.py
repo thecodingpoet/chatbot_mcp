@@ -110,3 +110,4 @@ class CustomerSupportAgent:
             return self._extract_response(response)
         except Exception as e:
             return f"I encountered an error: {str(e)}"
+
