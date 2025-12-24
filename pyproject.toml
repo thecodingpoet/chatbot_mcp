@@ -1,0 +1,13 @@
+[project]
+name = "chatbot-mcp"
+version = "0.1.0"
+description = "Customer Support Chatbot with MCP Integration"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-mcp-adapters>=0.1.0",
+    "gradio>=4.0.0",
+    "python-dotenv>=1.0.0",
+]
