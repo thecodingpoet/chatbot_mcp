@@ -1,5 +1,11 @@
 """Gradio UI entry point for Customer Support Chatbot."""
 
+import sys
+from pathlib import Path
+
+# Add src to path for imports
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+
 import asyncio
 import gradio as gr
 from agent import CustomerSupportAgent

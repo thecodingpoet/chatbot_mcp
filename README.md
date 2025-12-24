@@ -1,3 +1,14 @@
+---
+title: Customer Support Chatbot
+emoji: 🛒
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: "5.0.0"
+app_file: app.py
+pinned: false
+---
+
 # Customer Support Chatbot
 
 A customer support chatbot for computer products using LangChain agents and MCP.
@@ -7,7 +18,7 @@ A customer support chatbot for computer products using LangChain agents and MCP.
 ```bash
 uv sync
 cp .env.example .env  # Add your OpenAI API key
-uv run src/main.py
+uv run app.py
 ```
 
 Open http://localhost:7860
@@ -44,6 +55,17 @@ Open http://localhost:7860
 - **Agent**: LangChain + langchain-mcp-adapters
 - **UI**: Gradio
 - **MCP Server**: `https://vipfapwm3x.us-east-1.awsapprunner.com/mcp`
+
+## Deploy to HuggingFace Spaces
+
+1. Create a new Space at [huggingface.co/new-space](https://huggingface.co/new-space)
+2. Select **Gradio** as the SDK
+3. Clone and push:
+   ```bash
+   git remote add space https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE
+   git push space main
+   ```
+4. Add `OPENAI_API_KEY` in Space Settings → Variables and Secrets
 
 ## Documentation
 

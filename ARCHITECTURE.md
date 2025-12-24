@@ -65,8 +65,8 @@ No login screen. The agent asks for email + PIN only when the user requests orde
 ## Project Structure
 
 ```
-src/
-├── agent.py    # LangChain agent + MCP client
-└── main.py     # Gradio UI
+├── app.py          # Gradio UI entry point
+└── src/
+    └── agent.py    # LangChain agent + MCP client
 ```
 
