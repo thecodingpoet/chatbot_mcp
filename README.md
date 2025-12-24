@@ -2,6 +2,8 @@
 
 A customer support chatbot for computer products using LangChain agents and MCP.
 
+🚀 **[Live Demo on HuggingFace Spaces](https://huggingface.co/spaces/thecodingpoet/cschatbot)**
+
 ## Quick Start
 
 ```bash
